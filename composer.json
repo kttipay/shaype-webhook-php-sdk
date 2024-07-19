@@ -1,4 +1,5 @@
 {
+    "name": "kttipay/shaype-webhook-php-sdk",
     "description": "Definition of the webhooks API for client callbacks",
     "keywords": [
         "openapitools",
