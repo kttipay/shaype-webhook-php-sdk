@@ -4,7 +4,7 @@
  *
  * PHP version 8.1
  *
- * @package  OpenAPI\Client
+ * @package  Shaype\Webhook
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,19 +25,19 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Shaype\Webhook\Model;
 
 use ArrayAccess;
 use JsonSerializable;
 use InvalidArgumentException;
 use ReturnTypeWillChange;
-use OpenAPI\Client\ObjectSerializer;
+use Shaype\Webhook\ObjectSerializer;
 
 /**
  * SmsDto Class Doc Comment
  *
  * @description Details of the SMS notification
- * @package  OpenAPI\Client
+ * @package  Shaype\Webhook
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements ArrayAccess<string, mixed>
@@ -59,15 +59,15 @@ class SmsDto implements ModelInterface, ArrayAccess, JsonSerializable
       * @var array<string, string>
       */
     protected static array $openAPITypes = [
-        'phone_number' => '\OpenAPI\Client\Model\PhoneNumber',
+        'phone_number' => '\Shaype\Webhook\Model\PhoneNumber',
         'type' => 'string',
         'idempotency_key' => 'string',
         'customer_hay_id' => 'string',
-        'card_status_change_event' => '\OpenAPI\Client\Model\CardStatusChangeEventDto',
-        'account_status_change_event' => '\OpenAPI\Client\Model\AccountStatusChangeEventDto',
-        'passcode_change_event' => '\OpenAPI\Client\Model\PasscodeChangeEventDto',
-        'phone_number_verification_event' => '\OpenAPI\Client\Model\PhoneNumberVerificationEventDto',
-        'customer_otp_event' => '\OpenAPI\Client\Model\CustomerOtpEventDto'
+        'card_status_change_event' => '\Shaype\Webhook\Model\CardStatusChangeEventDto',
+        'account_status_change_event' => '\Shaype\Webhook\Model\AccountStatusChangeEventDto',
+        'passcode_change_event' => '\Shaype\Webhook\Model\PasscodeChangeEventDto',
+        'phone_number_verification_event' => '\Shaype\Webhook\Model\PhoneNumberVerificationEventDto',
+        'customer_otp_event' => '\Shaype\Webhook\Model\CustomerOtpEventDto'
     ];
 
     /**
@@ -386,9 +386,9 @@ class SmsDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Gets phone_number
      *
-     * @return \OpenAPI\Client\Model\PhoneNumber
+     * @return \Shaype\Webhook\Model\PhoneNumber
      */
-    public function getPhoneNumber(): \OpenAPI\Client\Model\PhoneNumber
+    public function getPhoneNumber(): \Shaype\Webhook\Model\PhoneNumber
     {
         return $this->container['phone_number'];
     }
@@ -396,11 +396,11 @@ class SmsDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Sets phone_number
      *
-     * @param \OpenAPI\Client\Model\PhoneNumber $phone_number phone_number
+     * @param \Shaype\Webhook\Model\PhoneNumber $phone_number phone_number
      *
      * @return $this
      */
-    public function setPhoneNumber(\OpenAPI\Client\Model\PhoneNumber $phone_number): static
+    public function setPhoneNumber(\Shaype\Webhook\Model\PhoneNumber $phone_number): static
     {
         if (is_null($phone_number)) {
             throw new InvalidArgumentException('non-nullable phone_number cannot be null');
@@ -504,9 +504,9 @@ class SmsDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Gets card_status_change_event
      *
-     * @return \OpenAPI\Client\Model\CardStatusChangeEventDto|null
+     * @return \Shaype\Webhook\Model\CardStatusChangeEventDto|null
      */
-    public function getCardStatusChangeEvent(): ?\OpenAPI\Client\Model\CardStatusChangeEventDto
+    public function getCardStatusChangeEvent(): ?\Shaype\Webhook\Model\CardStatusChangeEventDto
     {
         return $this->container['card_status_change_event'];
     }
@@ -514,11 +514,11 @@ class SmsDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Sets card_status_change_event
      *
-     * @param \OpenAPI\Client\Model\CardStatusChangeEventDto|null $card_status_change_event card_status_change_event
+     * @param \Shaype\Webhook\Model\CardStatusChangeEventDto|null $card_status_change_event card_status_change_event
      *
      * @return $this
      */
-    public function setCardStatusChangeEvent(?\OpenAPI\Client\Model\CardStatusChangeEventDto $card_status_change_event): static
+    public function setCardStatusChangeEvent(?\Shaype\Webhook\Model\CardStatusChangeEventDto $card_status_change_event): static
     {
         if (is_null($card_status_change_event)) {
             throw new InvalidArgumentException('non-nullable card_status_change_event cannot be null');
@@ -531,9 +531,9 @@ class SmsDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Gets account_status_change_event
      *
-     * @return \OpenAPI\Client\Model\AccountStatusChangeEventDto|null
+     * @return \Shaype\Webhook\Model\AccountStatusChangeEventDto|null
      */
-    public function getAccountStatusChangeEvent(): ?\OpenAPI\Client\Model\AccountStatusChangeEventDto
+    public function getAccountStatusChangeEvent(): ?\Shaype\Webhook\Model\AccountStatusChangeEventDto
     {
         return $this->container['account_status_change_event'];
     }
@@ -541,11 +541,11 @@ class SmsDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Sets account_status_change_event
      *
-     * @param \OpenAPI\Client\Model\AccountStatusChangeEventDto|null $account_status_change_event account_status_change_event
+     * @param \Shaype\Webhook\Model\AccountStatusChangeEventDto|null $account_status_change_event account_status_change_event
      *
      * @return $this
      */
-    public function setAccountStatusChangeEvent(?\OpenAPI\Client\Model\AccountStatusChangeEventDto $account_status_change_event): static
+    public function setAccountStatusChangeEvent(?\Shaype\Webhook\Model\AccountStatusChangeEventDto $account_status_change_event): static
     {
         if (is_null($account_status_change_event)) {
             throw new InvalidArgumentException('non-nullable account_status_change_event cannot be null');
@@ -558,9 +558,9 @@ class SmsDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Gets passcode_change_event
      *
-     * @return \OpenAPI\Client\Model\PasscodeChangeEventDto|null
+     * @return \Shaype\Webhook\Model\PasscodeChangeEventDto|null
      */
-    public function getPasscodeChangeEvent(): ?\OpenAPI\Client\Model\PasscodeChangeEventDto
+    public function getPasscodeChangeEvent(): ?\Shaype\Webhook\Model\PasscodeChangeEventDto
     {
         return $this->container['passcode_change_event'];
     }
@@ -568,11 +568,11 @@ class SmsDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Sets passcode_change_event
      *
-     * @param \OpenAPI\Client\Model\PasscodeChangeEventDto|null $passcode_change_event passcode_change_event
+     * @param \Shaype\Webhook\Model\PasscodeChangeEventDto|null $passcode_change_event passcode_change_event
      *
      * @return $this
      */
-    public function setPasscodeChangeEvent(?\OpenAPI\Client\Model\PasscodeChangeEventDto $passcode_change_event): static
+    public function setPasscodeChangeEvent(?\Shaype\Webhook\Model\PasscodeChangeEventDto $passcode_change_event): static
     {
         if (is_null($passcode_change_event)) {
             throw new InvalidArgumentException('non-nullable passcode_change_event cannot be null');
@@ -585,9 +585,9 @@ class SmsDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Gets phone_number_verification_event
      *
-     * @return \OpenAPI\Client\Model\PhoneNumberVerificationEventDto|null
+     * @return \Shaype\Webhook\Model\PhoneNumberVerificationEventDto|null
      */
-    public function getPhoneNumberVerificationEvent(): ?\OpenAPI\Client\Model\PhoneNumberVerificationEventDto
+    public function getPhoneNumberVerificationEvent(): ?\Shaype\Webhook\Model\PhoneNumberVerificationEventDto
     {
         return $this->container['phone_number_verification_event'];
     }
@@ -595,11 +595,11 @@ class SmsDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Sets phone_number_verification_event
      *
-     * @param \OpenAPI\Client\Model\PhoneNumberVerificationEventDto|null $phone_number_verification_event phone_number_verification_event
+     * @param \Shaype\Webhook\Model\PhoneNumberVerificationEventDto|null $phone_number_verification_event phone_number_verification_event
      *
      * @return $this
      */
-    public function setPhoneNumberVerificationEvent(?\OpenAPI\Client\Model\PhoneNumberVerificationEventDto $phone_number_verification_event): static
+    public function setPhoneNumberVerificationEvent(?\Shaype\Webhook\Model\PhoneNumberVerificationEventDto $phone_number_verification_event): static
     {
         if (is_null($phone_number_verification_event)) {
             throw new InvalidArgumentException('non-nullable phone_number_verification_event cannot be null');
@@ -612,9 +612,9 @@ class SmsDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Gets customer_otp_event
      *
-     * @return \OpenAPI\Client\Model\CustomerOtpEventDto|null
+     * @return \Shaype\Webhook\Model\CustomerOtpEventDto|null
      */
-    public function getCustomerOtpEvent(): ?\OpenAPI\Client\Model\CustomerOtpEventDto
+    public function getCustomerOtpEvent(): ?\Shaype\Webhook\Model\CustomerOtpEventDto
     {
         return $this->container['customer_otp_event'];
     }
@@ -622,11 +622,11 @@ class SmsDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Sets customer_otp_event
      *
-     * @param \OpenAPI\Client\Model\CustomerOtpEventDto|null $customer_otp_event customer_otp_event
+     * @param \Shaype\Webhook\Model\CustomerOtpEventDto|null $customer_otp_event customer_otp_event
      *
      * @return $this
      */
-    public function setCustomerOtpEvent(?\OpenAPI\Client\Model\CustomerOtpEventDto $customer_otp_event): static
+    public function setCustomerOtpEvent(?\Shaype\Webhook\Model\CustomerOtpEventDto $customer_otp_event): static
     {
         if (is_null($customer_otp_event)) {
             throw new InvalidArgumentException('non-nullable customer_otp_event cannot be null');

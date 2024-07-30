@@ -3,7 +3,7 @@
  * NotificationsAPIApi
  * PHP version 8.1
  *
- * @package  OpenAPI\Client
+ * @package  Shaype\Webhook
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -24,7 +24,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Shaype\Webhook\Api;
 
 use InvalidArgumentException;
 use GuzzleHttp\Client;
@@ -35,15 +35,15 @@ use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use GuzzleHttp\Promise\PromiseInterface;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Shaype\Webhook\ApiException;
+use Shaype\Webhook\Configuration;
+use Shaype\Webhook\HeaderSelector;
+use Shaype\Webhook\ObjectSerializer;
 
 /**
  * NotificationsAPIApi Class Doc Comment
  *
- * @package  OpenAPI\Client
+ * @package  Shaype\Webhook
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -133,7 +133,7 @@ class NotificationsAPIApi
      *
      * Notification - email
      *
-     * @param  \OpenAPI\Client\Model\EmailDto $email_dto email_dto (required)
+     * @param  \Shaype\Webhook\Model\EmailDto $email_dto email_dto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['notifyEmail'] to see the possible values for this operation
      *
      * @throws ApiException on non-2xx response or if the response body is not in the expected format
@@ -141,7 +141,7 @@ class NotificationsAPIApi
      * @return void
      */
     public function notifyEmail(
-        \OpenAPI\Client\Model\EmailDto $email_dto,
+        \Shaype\Webhook\Model\EmailDto $email_dto,
         string $contentType = self::contentTypes['notifyEmail'][0]
     ): void
     {
@@ -153,7 +153,7 @@ class NotificationsAPIApi
      *
      * Notification - email
      *
-     * @param  \OpenAPI\Client\Model\EmailDto $email_dto (required)
+     * @param  \Shaype\Webhook\Model\EmailDto $email_dto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['notifyEmail'] to see the possible values for this operation
      *
      * @throws ApiException on non-2xx response or if the response body is not in the expected format
@@ -161,7 +161,7 @@ class NotificationsAPIApi
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function notifyEmailWithHttpInfo(
-        \OpenAPI\Client\Model\EmailDto $email_dto,
+        \Shaype\Webhook\Model\EmailDto $email_dto,
         string $contentType = self::contentTypes['notifyEmail'][0]
     ): array
     {
@@ -216,14 +216,14 @@ class NotificationsAPIApi
      *
      * Notification - email
      *
-     * @param  \OpenAPI\Client\Model\EmailDto $email_dto (required)
+     * @param  \Shaype\Webhook\Model\EmailDto $email_dto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['notifyEmail'] to see the possible values for this operation
      *
      * @throws InvalidArgumentException
      * @return PromiseInterface
      */
     public function notifyEmailAsync(
-        \OpenAPI\Client\Model\EmailDto $email_dto,
+        \Shaype\Webhook\Model\EmailDto $email_dto,
         string $contentType = self::contentTypes['notifyEmail'][0]
     ): PromiseInterface
     {
@@ -240,7 +240,7 @@ class NotificationsAPIApi
      *
      * Notification - email
      *
-     * @param  \OpenAPI\Client\Model\EmailDto $email_dto (required)
+     * @param  \Shaype\Webhook\Model\EmailDto $email_dto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['notifyEmail'] to see the possible values for this operation
      *
      * @throws InvalidArgumentException
@@ -280,7 +280,7 @@ class NotificationsAPIApi
     /**
      * Create request for operation 'notifyEmail'
      *
-     * @param  \OpenAPI\Client\Model\EmailDto $email_dto (required)
+     * @param  \Shaype\Webhook\Model\EmailDto $email_dto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['notifyEmail'] to see the possible values for this operation
      *
      * @throws InvalidArgumentException
@@ -376,7 +376,7 @@ class NotificationsAPIApi
      *
      * Notification - event
      *
-     * @param  \OpenAPI\Client\Model\NotificationDto $notification_dto notification_dto (required)
+     * @param  \Shaype\Webhook\Model\NotificationDto $notification_dto notification_dto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['notifyNotification'] to see the possible values for this operation
      *
      * @throws ApiException on non-2xx response or if the response body is not in the expected format
@@ -384,7 +384,7 @@ class NotificationsAPIApi
      * @return void
      */
     public function notifyNotification(
-        \OpenAPI\Client\Model\NotificationDto $notification_dto,
+        \Shaype\Webhook\Model\NotificationDto $notification_dto,
         string $contentType = self::contentTypes['notifyNotification'][0]
     ): void
     {
@@ -396,7 +396,7 @@ class NotificationsAPIApi
      *
      * Notification - event
      *
-     * @param  \OpenAPI\Client\Model\NotificationDto $notification_dto (required)
+     * @param  \Shaype\Webhook\Model\NotificationDto $notification_dto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['notifyNotification'] to see the possible values for this operation
      *
      * @throws ApiException on non-2xx response or if the response body is not in the expected format
@@ -404,7 +404,7 @@ class NotificationsAPIApi
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function notifyNotificationWithHttpInfo(
-        \OpenAPI\Client\Model\NotificationDto $notification_dto,
+        \Shaype\Webhook\Model\NotificationDto $notification_dto,
         string $contentType = self::contentTypes['notifyNotification'][0]
     ): array
     {
@@ -459,14 +459,14 @@ class NotificationsAPIApi
      *
      * Notification - event
      *
-     * @param  \OpenAPI\Client\Model\NotificationDto $notification_dto (required)
+     * @param  \Shaype\Webhook\Model\NotificationDto $notification_dto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['notifyNotification'] to see the possible values for this operation
      *
      * @throws InvalidArgumentException
      * @return PromiseInterface
      */
     public function notifyNotificationAsync(
-        \OpenAPI\Client\Model\NotificationDto $notification_dto,
+        \Shaype\Webhook\Model\NotificationDto $notification_dto,
         string $contentType = self::contentTypes['notifyNotification'][0]
     ): PromiseInterface
     {
@@ -483,7 +483,7 @@ class NotificationsAPIApi
      *
      * Notification - event
      *
-     * @param  \OpenAPI\Client\Model\NotificationDto $notification_dto (required)
+     * @param  \Shaype\Webhook\Model\NotificationDto $notification_dto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['notifyNotification'] to see the possible values for this operation
      *
      * @throws InvalidArgumentException
@@ -523,7 +523,7 @@ class NotificationsAPIApi
     /**
      * Create request for operation 'notifyNotification'
      *
-     * @param  \OpenAPI\Client\Model\NotificationDto $notification_dto (required)
+     * @param  \Shaype\Webhook\Model\NotificationDto $notification_dto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['notifyNotification'] to see the possible values for this operation
      *
      * @throws InvalidArgumentException
@@ -619,7 +619,7 @@ class NotificationsAPIApi
      *
      * Notification - SMS
      *
-     * @param  \OpenAPI\Client\Model\SmsDto $sms_dto sms_dto (required)
+     * @param  \Shaype\Webhook\Model\SmsDto $sms_dto sms_dto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['notifySms'] to see the possible values for this operation
      *
      * @throws ApiException on non-2xx response or if the response body is not in the expected format
@@ -627,7 +627,7 @@ class NotificationsAPIApi
      * @return void
      */
     public function notifySms(
-        \OpenAPI\Client\Model\SmsDto $sms_dto,
+        \Shaype\Webhook\Model\SmsDto $sms_dto,
         string $contentType = self::contentTypes['notifySms'][0]
     ): void
     {
@@ -639,7 +639,7 @@ class NotificationsAPIApi
      *
      * Notification - SMS
      *
-     * @param  \OpenAPI\Client\Model\SmsDto $sms_dto (required)
+     * @param  \Shaype\Webhook\Model\SmsDto $sms_dto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['notifySms'] to see the possible values for this operation
      *
      * @throws ApiException on non-2xx response or if the response body is not in the expected format
@@ -647,7 +647,7 @@ class NotificationsAPIApi
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function notifySmsWithHttpInfo(
-        \OpenAPI\Client\Model\SmsDto $sms_dto,
+        \Shaype\Webhook\Model\SmsDto $sms_dto,
         string $contentType = self::contentTypes['notifySms'][0]
     ): array
     {
@@ -702,14 +702,14 @@ class NotificationsAPIApi
      *
      * Notification - SMS
      *
-     * @param  \OpenAPI\Client\Model\SmsDto $sms_dto (required)
+     * @param  \Shaype\Webhook\Model\SmsDto $sms_dto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['notifySms'] to see the possible values for this operation
      *
      * @throws InvalidArgumentException
      * @return PromiseInterface
      */
     public function notifySmsAsync(
-        \OpenAPI\Client\Model\SmsDto $sms_dto,
+        \Shaype\Webhook\Model\SmsDto $sms_dto,
         string $contentType = self::contentTypes['notifySms'][0]
     ): PromiseInterface
     {
@@ -726,7 +726,7 @@ class NotificationsAPIApi
      *
      * Notification - SMS
      *
-     * @param  \OpenAPI\Client\Model\SmsDto $sms_dto (required)
+     * @param  \Shaype\Webhook\Model\SmsDto $sms_dto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['notifySms'] to see the possible values for this operation
      *
      * @throws InvalidArgumentException
@@ -766,7 +766,7 @@ class NotificationsAPIApi
     /**
      * Create request for operation 'notifySms'
      *
-     * @param  \OpenAPI\Client\Model\SmsDto $sms_dto (required)
+     * @param  \Shaype\Webhook\Model\SmsDto $sms_dto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['notifySms'] to see the possible values for this operation
      *
      * @throws InvalidArgumentException

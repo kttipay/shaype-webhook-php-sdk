@@ -4,7 +4,7 @@
  *
  * PHP version 8.1
  *
- * @package  OpenAPI\Client
+ * @package  Shaype\Webhook
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,19 +25,19 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Shaype\Webhook\Model;
 
 use ArrayAccess;
 use JsonSerializable;
 use InvalidArgumentException;
 use ReturnTypeWillChange;
-use OpenAPI\Client\ObjectSerializer;
+use Shaype\Webhook\ObjectSerializer;
 
 /**
  * ScheduledPaymentEventDto Class Doc Comment
  *
  * @description Details of the **Scheduled Payment Created** event; provided when the type is &#x60;SCHEDULED_PAYMENT&#x60;.
- * @package  OpenAPI\Client
+ * @package  Shaype\Webhook
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements ArrayAccess<string, mixed>

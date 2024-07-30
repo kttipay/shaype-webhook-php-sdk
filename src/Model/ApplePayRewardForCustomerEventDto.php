@@ -4,7 +4,7 @@
  *
  * PHP version 8.1
  *
- * @package  OpenAPI\Client
+ * @package  Shaype\Webhook
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,19 +25,19 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Shaype\Webhook\Model;
 
 use ArrayAccess;
 use JsonSerializable;
 use InvalidArgumentException;
 use ReturnTypeWillChange;
-use OpenAPI\Client\ObjectSerializer;
+use Shaype\Webhook\ObjectSerializer;
 
 /**
  * ApplePayRewardForCustomerEventDto Class Doc Comment
  *
  * @description Details of the **Apple Pay Reward For Customer** event; provided when the type is &#x60;APPLE_PAY_REWARD_FOR_CUSTOMER&#x60;.
- * @package  OpenAPI\Client
+ * @package  Shaype\Webhook
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements ArrayAccess<string, mixed>

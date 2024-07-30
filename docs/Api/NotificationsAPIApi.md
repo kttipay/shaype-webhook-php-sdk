@@ -1,4 +1,4 @@
-# OpenAPI\Client\NotificationsAPIApi
+# Shaype\Webhook\NotificationsAPIApi
 
 All URIs are relative to http://localhost:8080, except if the operation defines another base path.
 
@@ -27,12 +27,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\NotificationsAPIApi(
+$apiInstance = new Shaype\Webhook\Api\NotificationsAPIApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$email_dto = new \OpenAPI\Client\Model\EmailDto(); // \OpenAPI\Client\Model\EmailDto
+$email_dto = new \Shaype\Webhook\Model\EmailDto(); // \Shaype\Webhook\Model\EmailDto
 
 try {
     $apiInstance->notifyEmail($email_dto);
@@ -45,7 +45,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **email_dto** | [**\OpenAPI\Client\Model\EmailDto**](../Model/EmailDto.md)|  | |
+| **email_dto** | [**\Shaype\Webhook\Model\EmailDto**](../Model/EmailDto.md)|  | |
 
 ### Return type
 
@@ -82,12 +82,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\NotificationsAPIApi(
+$apiInstance = new Shaype\Webhook\Api\NotificationsAPIApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$notification_dto = new \OpenAPI\Client\Model\NotificationDto(); // \OpenAPI\Client\Model\NotificationDto
+$notification_dto = new \Shaype\Webhook\Model\NotificationDto(); // \Shaype\Webhook\Model\NotificationDto
 
 try {
     $apiInstance->notifyNotification($notification_dto);
@@ -100,7 +100,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **notification_dto** | [**\OpenAPI\Client\Model\NotificationDto**](../Model/NotificationDto.md)|  | |
+| **notification_dto** | [**\Shaype\Webhook\Model\NotificationDto**](../Model/NotificationDto.md)|  | |
 
 ### Return type
 
@@ -137,12 +137,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\NotificationsAPIApi(
+$apiInstance = new Shaype\Webhook\Api\NotificationsAPIApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$sms_dto = new \OpenAPI\Client\Model\SmsDto(); // \OpenAPI\Client\Model\SmsDto
+$sms_dto = new \Shaype\Webhook\Model\SmsDto(); // \Shaype\Webhook\Model\SmsDto
 
 try {
     $apiInstance->notifySms($sms_dto);
@@ -155,7 +155,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **sms_dto** | [**\OpenAPI\Client\Model\SmsDto**](../Model/SmsDto.md)|  | |
+| **sms_dto** | [**\Shaype\Webhook\Model\SmsDto**](../Model/SmsDto.md)|  | |
 
 ### Return type
 

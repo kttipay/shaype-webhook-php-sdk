@@ -4,7 +4,7 @@
  *
  * PHP version 8.1
  *
- * @package  OpenAPI\Client
+ * @package  Shaype\Webhook
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,19 +25,19 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Shaype\Webhook\Model;
 
 use ArrayAccess;
 use JsonSerializable;
 use InvalidArgumentException;
 use ReturnTypeWillChange;
-use OpenAPI\Client\ObjectSerializer;
+use Shaype\Webhook\ObjectSerializer;
 
 /**
  * CardExpiryReminderEventDto Class Doc Comment
  *
  * @description Details of the **Card About To Expire Event** event; provided when the type is &#x60;REMINDER&#x60;+ with one of the following reminder type values:  * **CARD_EXPIRY_MONTH_REMINDER**  * **CARD_EXPIRY_2_WEEK_REMINDER**  * **CARD_EXPIRY_DAY_REMINDER**
- * @package  OpenAPI\Client
+ * @package  Shaype\Webhook
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements ArrayAccess<string, mixed>

@@ -4,7 +4,7 @@
  *
  * PHP version 8.1
  *
- * @package  OpenAPI\Client
+ * @package  Shaype\Webhook
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,19 +25,19 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Shaype\Webhook\Model;
 
 use ArrayAccess;
 use JsonSerializable;
 use InvalidArgumentException;
 use ReturnTypeWillChange;
-use OpenAPI\Client\ObjectSerializer;
+use Shaype\Webhook\ObjectSerializer;
 
 /**
  * CounterpartDetails Class Doc Comment
  *
  * @description Transaction counterpart details.
- * @package  OpenAPI\Client
+ * @package  Shaype\Webhook
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements ArrayAccess<string, mixed>
@@ -60,8 +60,8 @@ class CounterpartDetails implements ModelInterface, ArrayAccess, JsonSerializabl
       */
     protected static array $openAPITypes = [
         'name' => 'string',
-        'bpay_details' => '\OpenAPI\Client\Model\BpayDetails',
-        'basic_account_number' => '\OpenAPI\Client\Model\BasicAccountNumber'
+        'bpay_details' => '\Shaype\Webhook\Model\BpayDetails',
+        'basic_account_number' => '\Shaype\Webhook\Model\BasicAccountNumber'
     ];
 
     /**
@@ -332,9 +332,9 @@ class CounterpartDetails implements ModelInterface, ArrayAccess, JsonSerializabl
     /**
      * Gets bpay_details
      *
-     * @return \OpenAPI\Client\Model\BpayDetails|null
+     * @return \Shaype\Webhook\Model\BpayDetails|null
      */
-    public function getBpayDetails(): ?\OpenAPI\Client\Model\BpayDetails
+    public function getBpayDetails(): ?\Shaype\Webhook\Model\BpayDetails
     {
         return $this->container['bpay_details'];
     }
@@ -342,11 +342,11 @@ class CounterpartDetails implements ModelInterface, ArrayAccess, JsonSerializabl
     /**
      * Sets bpay_details
      *
-     * @param \OpenAPI\Client\Model\BpayDetails|null $bpay_details bpay_details
+     * @param \Shaype\Webhook\Model\BpayDetails|null $bpay_details bpay_details
      *
      * @return $this
      */
-    public function setBpayDetails(?\OpenAPI\Client\Model\BpayDetails $bpay_details): static
+    public function setBpayDetails(?\Shaype\Webhook\Model\BpayDetails $bpay_details): static
     {
         if (is_null($bpay_details)) {
             throw new InvalidArgumentException('non-nullable bpay_details cannot be null');
@@ -359,9 +359,9 @@ class CounterpartDetails implements ModelInterface, ArrayAccess, JsonSerializabl
     /**
      * Gets basic_account_number
      *
-     * @return \OpenAPI\Client\Model\BasicAccountNumber|null
+     * @return \Shaype\Webhook\Model\BasicAccountNumber|null
      */
-    public function getBasicAccountNumber(): ?\OpenAPI\Client\Model\BasicAccountNumber
+    public function getBasicAccountNumber(): ?\Shaype\Webhook\Model\BasicAccountNumber
     {
         return $this->container['basic_account_number'];
     }
@@ -369,11 +369,11 @@ class CounterpartDetails implements ModelInterface, ArrayAccess, JsonSerializabl
     /**
      * Sets basic_account_number
      *
-     * @param \OpenAPI\Client\Model\BasicAccountNumber|null $basic_account_number basic_account_number
+     * @param \Shaype\Webhook\Model\BasicAccountNumber|null $basic_account_number basic_account_number
      *
      * @return $this
      */
-    public function setBasicAccountNumber(?\OpenAPI\Client\Model\BasicAccountNumber $basic_account_number): static
+    public function setBasicAccountNumber(?\Shaype\Webhook\Model\BasicAccountNumber $basic_account_number): static
     {
         if (is_null($basic_account_number)) {
             throw new InvalidArgumentException('non-nullable basic_account_number cannot be null');

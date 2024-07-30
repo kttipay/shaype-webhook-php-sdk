@@ -4,7 +4,7 @@
  *
  * PHP version 8.1
  *
- * @package  OpenAPI\Client
+ * @package  Shaype\Webhook
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,19 +25,19 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Shaype\Webhook\Model;
 
 use ArrayAccess;
 use JsonSerializable;
 use InvalidArgumentException;
 use ReturnTypeWillChange;
-use OpenAPI\Client\ObjectSerializer;
+use Shaype\Webhook\ObjectSerializer;
 
 /**
  * NotificationDto Class Doc Comment
  *
  * @description Details of event the notification
- * @package  OpenAPI\Client
+ * @package  Shaype\Webhook
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements ArrayAccess<string, mixed>
@@ -66,22 +66,22 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
         'action_owner' => 'string',
         'card_hay_id' => 'string',
         'product_id' => 'string',
-        'account_status_change_event' => '\OpenAPI\Client\Model\AccountStatusChangeEventDto',
-        'customer_status_updated_event' => '\OpenAPI\Client\Model\CustomerStatusUpdatedEventDto',
-        'transaction_event' => '\OpenAPI\Client\Model\TransactionEventDto',
-        'card_status_change_event' => '\OpenAPI\Client\Model\CardStatusChangeEventDto',
-        'customer_details_change_event' => '\OpenAPI\Client\Model\CustomerDetailsChangeEventDto',
-        'card_addition_to_wallet_event' => '\OpenAPI\Client\Model\CardAdditionToWalletEventDto',
+        'account_status_change_event' => '\Shaype\Webhook\Model\AccountStatusChangeEventDto',
+        'customer_status_updated_event' => '\Shaype\Webhook\Model\CustomerStatusUpdatedEventDto',
+        'transaction_event' => '\Shaype\Webhook\Model\TransactionEventDto',
+        'card_status_change_event' => '\Shaype\Webhook\Model\CardStatusChangeEventDto',
+        'customer_details_change_event' => '\Shaype\Webhook\Model\CustomerDetailsChangeEventDto',
+        'card_addition_to_wallet_event' => '\Shaype\Webhook\Model\CardAdditionToWalletEventDto',
         'reminder_type' => 'string',
-        'scheduled_payment_event' => '\OpenAPI\Client\Model\ScheduledPaymentEventDto',
-        'onboarding_failed_event' => '\OpenAPI\Client\Model\OnboardingFailedEventDto',
-        'direct_entry_event' => '\OpenAPI\Client\Model\DirectEntryEventDto',
-        'mandate_due_payment_event_dto' => '\OpenAPI\Client\Model\MandateDuePaymentEventDto',
-        'mandate_event_dto' => '\OpenAPI\Client\Model\MandateEventDto',
-        'mandate_payment_event_dto' => '\OpenAPI\Client\Model\MandatePaymentEventDto',
-        'apple_pay_reward_for_customer_event' => '\OpenAPI\Client\Model\ApplePayRewardForCustomerEventDto',
-        'card_expiry_reminder_event' => '\OpenAPI\Client\Model\CardExpiryReminderEventDto',
-        'mandate_action_expiration_event' => '\OpenAPI\Client\Model\MandateActionExpirationEventDto'
+        'scheduled_payment_event' => '\Shaype\Webhook\Model\ScheduledPaymentEventDto',
+        'onboarding_failed_event' => '\Shaype\Webhook\Model\OnboardingFailedEventDto',
+        'direct_entry_event' => '\Shaype\Webhook\Model\DirectEntryEventDto',
+        'mandate_due_payment_event_dto' => '\Shaype\Webhook\Model\MandateDuePaymentEventDto',
+        'mandate_event_dto' => '\Shaype\Webhook\Model\MandateEventDto',
+        'mandate_payment_event_dto' => '\Shaype\Webhook\Model\MandatePaymentEventDto',
+        'apple_pay_reward_for_customer_event' => '\Shaype\Webhook\Model\ApplePayRewardForCustomerEventDto',
+        'card_expiry_reminder_event' => '\Shaype\Webhook\Model\CardExpiryReminderEventDto',
+        'mandate_action_expiration_event' => '\Shaype\Webhook\Model\MandateActionExpirationEventDto'
     ];
 
     /**
@@ -797,9 +797,9 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Gets account_status_change_event
      *
-     * @return \OpenAPI\Client\Model\AccountStatusChangeEventDto|null
+     * @return \Shaype\Webhook\Model\AccountStatusChangeEventDto|null
      */
-    public function getAccountStatusChangeEvent(): ?\OpenAPI\Client\Model\AccountStatusChangeEventDto
+    public function getAccountStatusChangeEvent(): ?\Shaype\Webhook\Model\AccountStatusChangeEventDto
     {
         return $this->container['account_status_change_event'];
     }
@@ -807,11 +807,11 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Sets account_status_change_event
      *
-     * @param \OpenAPI\Client\Model\AccountStatusChangeEventDto|null $account_status_change_event account_status_change_event
+     * @param \Shaype\Webhook\Model\AccountStatusChangeEventDto|null $account_status_change_event account_status_change_event
      *
      * @return $this
      */
-    public function setAccountStatusChangeEvent(?\OpenAPI\Client\Model\AccountStatusChangeEventDto $account_status_change_event): static
+    public function setAccountStatusChangeEvent(?\Shaype\Webhook\Model\AccountStatusChangeEventDto $account_status_change_event): static
     {
         if (is_null($account_status_change_event)) {
             throw new InvalidArgumentException('non-nullable account_status_change_event cannot be null');
@@ -824,9 +824,9 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Gets customer_status_updated_event
      *
-     * @return \OpenAPI\Client\Model\CustomerStatusUpdatedEventDto|null
+     * @return \Shaype\Webhook\Model\CustomerStatusUpdatedEventDto|null
      */
-    public function getCustomerStatusUpdatedEvent(): ?\OpenAPI\Client\Model\CustomerStatusUpdatedEventDto
+    public function getCustomerStatusUpdatedEvent(): ?\Shaype\Webhook\Model\CustomerStatusUpdatedEventDto
     {
         return $this->container['customer_status_updated_event'];
     }
@@ -834,11 +834,11 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Sets customer_status_updated_event
      *
-     * @param \OpenAPI\Client\Model\CustomerStatusUpdatedEventDto|null $customer_status_updated_event customer_status_updated_event
+     * @param \Shaype\Webhook\Model\CustomerStatusUpdatedEventDto|null $customer_status_updated_event customer_status_updated_event
      *
      * @return $this
      */
-    public function setCustomerStatusUpdatedEvent(?\OpenAPI\Client\Model\CustomerStatusUpdatedEventDto $customer_status_updated_event): static
+    public function setCustomerStatusUpdatedEvent(?\Shaype\Webhook\Model\CustomerStatusUpdatedEventDto $customer_status_updated_event): static
     {
         if (is_null($customer_status_updated_event)) {
             throw new InvalidArgumentException('non-nullable customer_status_updated_event cannot be null');
@@ -851,9 +851,9 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Gets transaction_event
      *
-     * @return \OpenAPI\Client\Model\TransactionEventDto|null
+     * @return \Shaype\Webhook\Model\TransactionEventDto|null
      */
-    public function getTransactionEvent(): ?\OpenAPI\Client\Model\TransactionEventDto
+    public function getTransactionEvent(): ?\Shaype\Webhook\Model\TransactionEventDto
     {
         return $this->container['transaction_event'];
     }
@@ -861,11 +861,11 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Sets transaction_event
      *
-     * @param \OpenAPI\Client\Model\TransactionEventDto|null $transaction_event transaction_event
+     * @param \Shaype\Webhook\Model\TransactionEventDto|null $transaction_event transaction_event
      *
      * @return $this
      */
-    public function setTransactionEvent(?\OpenAPI\Client\Model\TransactionEventDto $transaction_event): static
+    public function setTransactionEvent(?\Shaype\Webhook\Model\TransactionEventDto $transaction_event): static
     {
         if (is_null($transaction_event)) {
             throw new InvalidArgumentException('non-nullable transaction_event cannot be null');
@@ -878,9 +878,9 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Gets card_status_change_event
      *
-     * @return \OpenAPI\Client\Model\CardStatusChangeEventDto|null
+     * @return \Shaype\Webhook\Model\CardStatusChangeEventDto|null
      */
-    public function getCardStatusChangeEvent(): ?\OpenAPI\Client\Model\CardStatusChangeEventDto
+    public function getCardStatusChangeEvent(): ?\Shaype\Webhook\Model\CardStatusChangeEventDto
     {
         return $this->container['card_status_change_event'];
     }
@@ -888,11 +888,11 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Sets card_status_change_event
      *
-     * @param \OpenAPI\Client\Model\CardStatusChangeEventDto|null $card_status_change_event card_status_change_event
+     * @param \Shaype\Webhook\Model\CardStatusChangeEventDto|null $card_status_change_event card_status_change_event
      *
      * @return $this
      */
-    public function setCardStatusChangeEvent(?\OpenAPI\Client\Model\CardStatusChangeEventDto $card_status_change_event): static
+    public function setCardStatusChangeEvent(?\Shaype\Webhook\Model\CardStatusChangeEventDto $card_status_change_event): static
     {
         if (is_null($card_status_change_event)) {
             throw new InvalidArgumentException('non-nullable card_status_change_event cannot be null');
@@ -905,9 +905,9 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Gets customer_details_change_event
      *
-     * @return \OpenAPI\Client\Model\CustomerDetailsChangeEventDto|null
+     * @return \Shaype\Webhook\Model\CustomerDetailsChangeEventDto|null
      */
-    public function getCustomerDetailsChangeEvent(): ?\OpenAPI\Client\Model\CustomerDetailsChangeEventDto
+    public function getCustomerDetailsChangeEvent(): ?\Shaype\Webhook\Model\CustomerDetailsChangeEventDto
     {
         return $this->container['customer_details_change_event'];
     }
@@ -915,11 +915,11 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Sets customer_details_change_event
      *
-     * @param \OpenAPI\Client\Model\CustomerDetailsChangeEventDto|null $customer_details_change_event customer_details_change_event
+     * @param \Shaype\Webhook\Model\CustomerDetailsChangeEventDto|null $customer_details_change_event customer_details_change_event
      *
      * @return $this
      */
-    public function setCustomerDetailsChangeEvent(?\OpenAPI\Client\Model\CustomerDetailsChangeEventDto $customer_details_change_event): static
+    public function setCustomerDetailsChangeEvent(?\Shaype\Webhook\Model\CustomerDetailsChangeEventDto $customer_details_change_event): static
     {
         if (is_null($customer_details_change_event)) {
             throw new InvalidArgumentException('non-nullable customer_details_change_event cannot be null');
@@ -932,9 +932,9 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Gets card_addition_to_wallet_event
      *
-     * @return \OpenAPI\Client\Model\CardAdditionToWalletEventDto|null
+     * @return \Shaype\Webhook\Model\CardAdditionToWalletEventDto|null
      */
-    public function getCardAdditionToWalletEvent(): ?\OpenAPI\Client\Model\CardAdditionToWalletEventDto
+    public function getCardAdditionToWalletEvent(): ?\Shaype\Webhook\Model\CardAdditionToWalletEventDto
     {
         return $this->container['card_addition_to_wallet_event'];
     }
@@ -942,11 +942,11 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Sets card_addition_to_wallet_event
      *
-     * @param \OpenAPI\Client\Model\CardAdditionToWalletEventDto|null $card_addition_to_wallet_event card_addition_to_wallet_event
+     * @param \Shaype\Webhook\Model\CardAdditionToWalletEventDto|null $card_addition_to_wallet_event card_addition_to_wallet_event
      *
      * @return $this
      */
-    public function setCardAdditionToWalletEvent(?\OpenAPI\Client\Model\CardAdditionToWalletEventDto $card_addition_to_wallet_event): static
+    public function setCardAdditionToWalletEvent(?\Shaype\Webhook\Model\CardAdditionToWalletEventDto $card_addition_to_wallet_event): static
     {
         if (is_null($card_addition_to_wallet_event)) {
             throw new InvalidArgumentException('non-nullable card_addition_to_wallet_event cannot be null');
@@ -996,9 +996,9 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Gets scheduled_payment_event
      *
-     * @return \OpenAPI\Client\Model\ScheduledPaymentEventDto|null
+     * @return \Shaype\Webhook\Model\ScheduledPaymentEventDto|null
      */
-    public function getScheduledPaymentEvent(): ?\OpenAPI\Client\Model\ScheduledPaymentEventDto
+    public function getScheduledPaymentEvent(): ?\Shaype\Webhook\Model\ScheduledPaymentEventDto
     {
         return $this->container['scheduled_payment_event'];
     }
@@ -1006,11 +1006,11 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Sets scheduled_payment_event
      *
-     * @param \OpenAPI\Client\Model\ScheduledPaymentEventDto|null $scheduled_payment_event scheduled_payment_event
+     * @param \Shaype\Webhook\Model\ScheduledPaymentEventDto|null $scheduled_payment_event scheduled_payment_event
      *
      * @return $this
      */
-    public function setScheduledPaymentEvent(?\OpenAPI\Client\Model\ScheduledPaymentEventDto $scheduled_payment_event): static
+    public function setScheduledPaymentEvent(?\Shaype\Webhook\Model\ScheduledPaymentEventDto $scheduled_payment_event): static
     {
         if (is_null($scheduled_payment_event)) {
             throw new InvalidArgumentException('non-nullable scheduled_payment_event cannot be null');
@@ -1023,9 +1023,9 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Gets onboarding_failed_event
      *
-     * @return \OpenAPI\Client\Model\OnboardingFailedEventDto|null
+     * @return \Shaype\Webhook\Model\OnboardingFailedEventDto|null
      */
-    public function getOnboardingFailedEvent(): ?\OpenAPI\Client\Model\OnboardingFailedEventDto
+    public function getOnboardingFailedEvent(): ?\Shaype\Webhook\Model\OnboardingFailedEventDto
     {
         return $this->container['onboarding_failed_event'];
     }
@@ -1033,11 +1033,11 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Sets onboarding_failed_event
      *
-     * @param \OpenAPI\Client\Model\OnboardingFailedEventDto|null $onboarding_failed_event onboarding_failed_event
+     * @param \Shaype\Webhook\Model\OnboardingFailedEventDto|null $onboarding_failed_event onboarding_failed_event
      *
      * @return $this
      */
-    public function setOnboardingFailedEvent(?\OpenAPI\Client\Model\OnboardingFailedEventDto $onboarding_failed_event): static
+    public function setOnboardingFailedEvent(?\Shaype\Webhook\Model\OnboardingFailedEventDto $onboarding_failed_event): static
     {
         if (is_null($onboarding_failed_event)) {
             throw new InvalidArgumentException('non-nullable onboarding_failed_event cannot be null');
@@ -1050,9 +1050,9 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Gets direct_entry_event
      *
-     * @return \OpenAPI\Client\Model\DirectEntryEventDto|null
+     * @return \Shaype\Webhook\Model\DirectEntryEventDto|null
      */
-    public function getDirectEntryEvent(): ?\OpenAPI\Client\Model\DirectEntryEventDto
+    public function getDirectEntryEvent(): ?\Shaype\Webhook\Model\DirectEntryEventDto
     {
         return $this->container['direct_entry_event'];
     }
@@ -1060,11 +1060,11 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Sets direct_entry_event
      *
-     * @param \OpenAPI\Client\Model\DirectEntryEventDto|null $direct_entry_event direct_entry_event
+     * @param \Shaype\Webhook\Model\DirectEntryEventDto|null $direct_entry_event direct_entry_event
      *
      * @return $this
      */
-    public function setDirectEntryEvent(?\OpenAPI\Client\Model\DirectEntryEventDto $direct_entry_event): static
+    public function setDirectEntryEvent(?\Shaype\Webhook\Model\DirectEntryEventDto $direct_entry_event): static
     {
         if (is_null($direct_entry_event)) {
             throw new InvalidArgumentException('non-nullable direct_entry_event cannot be null');
@@ -1077,9 +1077,9 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Gets mandate_due_payment_event_dto
      *
-     * @return \OpenAPI\Client\Model\MandateDuePaymentEventDto|null
+     * @return \Shaype\Webhook\Model\MandateDuePaymentEventDto|null
      */
-    public function getMandateDuePaymentEventDto(): ?\OpenAPI\Client\Model\MandateDuePaymentEventDto
+    public function getMandateDuePaymentEventDto(): ?\Shaype\Webhook\Model\MandateDuePaymentEventDto
     {
         return $this->container['mandate_due_payment_event_dto'];
     }
@@ -1087,11 +1087,11 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Sets mandate_due_payment_event_dto
      *
-     * @param \OpenAPI\Client\Model\MandateDuePaymentEventDto|null $mandate_due_payment_event_dto mandate_due_payment_event_dto
+     * @param \Shaype\Webhook\Model\MandateDuePaymentEventDto|null $mandate_due_payment_event_dto mandate_due_payment_event_dto
      *
      * @return $this
      */
-    public function setMandateDuePaymentEventDto(?\OpenAPI\Client\Model\MandateDuePaymentEventDto $mandate_due_payment_event_dto): static
+    public function setMandateDuePaymentEventDto(?\Shaype\Webhook\Model\MandateDuePaymentEventDto $mandate_due_payment_event_dto): static
     {
         if (is_null($mandate_due_payment_event_dto)) {
             throw new InvalidArgumentException('non-nullable mandate_due_payment_event_dto cannot be null');
@@ -1104,9 +1104,9 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Gets mandate_event_dto
      *
-     * @return \OpenAPI\Client\Model\MandateEventDto|null
+     * @return \Shaype\Webhook\Model\MandateEventDto|null
      */
-    public function getMandateEventDto(): ?\OpenAPI\Client\Model\MandateEventDto
+    public function getMandateEventDto(): ?\Shaype\Webhook\Model\MandateEventDto
     {
         return $this->container['mandate_event_dto'];
     }
@@ -1114,11 +1114,11 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Sets mandate_event_dto
      *
-     * @param \OpenAPI\Client\Model\MandateEventDto|null $mandate_event_dto mandate_event_dto
+     * @param \Shaype\Webhook\Model\MandateEventDto|null $mandate_event_dto mandate_event_dto
      *
      * @return $this
      */
-    public function setMandateEventDto(?\OpenAPI\Client\Model\MandateEventDto $mandate_event_dto): static
+    public function setMandateEventDto(?\Shaype\Webhook\Model\MandateEventDto $mandate_event_dto): static
     {
         if (is_null($mandate_event_dto)) {
             throw new InvalidArgumentException('non-nullable mandate_event_dto cannot be null');
@@ -1131,9 +1131,9 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Gets mandate_payment_event_dto
      *
-     * @return \OpenAPI\Client\Model\MandatePaymentEventDto|null
+     * @return \Shaype\Webhook\Model\MandatePaymentEventDto|null
      */
-    public function getMandatePaymentEventDto(): ?\OpenAPI\Client\Model\MandatePaymentEventDto
+    public function getMandatePaymentEventDto(): ?\Shaype\Webhook\Model\MandatePaymentEventDto
     {
         return $this->container['mandate_payment_event_dto'];
     }
@@ -1141,11 +1141,11 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Sets mandate_payment_event_dto
      *
-     * @param \OpenAPI\Client\Model\MandatePaymentEventDto|null $mandate_payment_event_dto mandate_payment_event_dto
+     * @param \Shaype\Webhook\Model\MandatePaymentEventDto|null $mandate_payment_event_dto mandate_payment_event_dto
      *
      * @return $this
      */
-    public function setMandatePaymentEventDto(?\OpenAPI\Client\Model\MandatePaymentEventDto $mandate_payment_event_dto): static
+    public function setMandatePaymentEventDto(?\Shaype\Webhook\Model\MandatePaymentEventDto $mandate_payment_event_dto): static
     {
         if (is_null($mandate_payment_event_dto)) {
             throw new InvalidArgumentException('non-nullable mandate_payment_event_dto cannot be null');
@@ -1158,9 +1158,9 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Gets apple_pay_reward_for_customer_event
      *
-     * @return \OpenAPI\Client\Model\ApplePayRewardForCustomerEventDto|null
+     * @return \Shaype\Webhook\Model\ApplePayRewardForCustomerEventDto|null
      */
-    public function getApplePayRewardForCustomerEvent(): ?\OpenAPI\Client\Model\ApplePayRewardForCustomerEventDto
+    public function getApplePayRewardForCustomerEvent(): ?\Shaype\Webhook\Model\ApplePayRewardForCustomerEventDto
     {
         return $this->container['apple_pay_reward_for_customer_event'];
     }
@@ -1168,11 +1168,11 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Sets apple_pay_reward_for_customer_event
      *
-     * @param \OpenAPI\Client\Model\ApplePayRewardForCustomerEventDto|null $apple_pay_reward_for_customer_event apple_pay_reward_for_customer_event
+     * @param \Shaype\Webhook\Model\ApplePayRewardForCustomerEventDto|null $apple_pay_reward_for_customer_event apple_pay_reward_for_customer_event
      *
      * @return $this
      */
-    public function setApplePayRewardForCustomerEvent(?\OpenAPI\Client\Model\ApplePayRewardForCustomerEventDto $apple_pay_reward_for_customer_event): static
+    public function setApplePayRewardForCustomerEvent(?\Shaype\Webhook\Model\ApplePayRewardForCustomerEventDto $apple_pay_reward_for_customer_event): static
     {
         if (is_null($apple_pay_reward_for_customer_event)) {
             throw new InvalidArgumentException('non-nullable apple_pay_reward_for_customer_event cannot be null');
@@ -1185,9 +1185,9 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Gets card_expiry_reminder_event
      *
-     * @return \OpenAPI\Client\Model\CardExpiryReminderEventDto|null
+     * @return \Shaype\Webhook\Model\CardExpiryReminderEventDto|null
      */
-    public function getCardExpiryReminderEvent(): ?\OpenAPI\Client\Model\CardExpiryReminderEventDto
+    public function getCardExpiryReminderEvent(): ?\Shaype\Webhook\Model\CardExpiryReminderEventDto
     {
         return $this->container['card_expiry_reminder_event'];
     }
@@ -1195,11 +1195,11 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Sets card_expiry_reminder_event
      *
-     * @param \OpenAPI\Client\Model\CardExpiryReminderEventDto|null $card_expiry_reminder_event card_expiry_reminder_event
+     * @param \Shaype\Webhook\Model\CardExpiryReminderEventDto|null $card_expiry_reminder_event card_expiry_reminder_event
      *
      * @return $this
      */
-    public function setCardExpiryReminderEvent(?\OpenAPI\Client\Model\CardExpiryReminderEventDto $card_expiry_reminder_event): static
+    public function setCardExpiryReminderEvent(?\Shaype\Webhook\Model\CardExpiryReminderEventDto $card_expiry_reminder_event): static
     {
         if (is_null($card_expiry_reminder_event)) {
             throw new InvalidArgumentException('non-nullable card_expiry_reminder_event cannot be null');
@@ -1212,9 +1212,9 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Gets mandate_action_expiration_event
      *
-     * @return \OpenAPI\Client\Model\MandateActionExpirationEventDto|null
+     * @return \Shaype\Webhook\Model\MandateActionExpirationEventDto|null
      */
-    public function getMandateActionExpirationEvent(): ?\OpenAPI\Client\Model\MandateActionExpirationEventDto
+    public function getMandateActionExpirationEvent(): ?\Shaype\Webhook\Model\MandateActionExpirationEventDto
     {
         return $this->container['mandate_action_expiration_event'];
     }
@@ -1222,11 +1222,11 @@ class NotificationDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Sets mandate_action_expiration_event
      *
-     * @param \OpenAPI\Client\Model\MandateActionExpirationEventDto|null $mandate_action_expiration_event mandate_action_expiration_event
+     * @param \Shaype\Webhook\Model\MandateActionExpirationEventDto|null $mandate_action_expiration_event mandate_action_expiration_event
      *
      * @return $this
      */
-    public function setMandateActionExpirationEvent(?\OpenAPI\Client\Model\MandateActionExpirationEventDto $mandate_action_expiration_event): static
+    public function setMandateActionExpirationEvent(?\Shaype\Webhook\Model\MandateActionExpirationEventDto $mandate_action_expiration_event): static
     {
         if (is_null($mandate_action_expiration_event)) {
             throw new InvalidArgumentException('non-nullable mandate_action_expiration_event cannot be null');

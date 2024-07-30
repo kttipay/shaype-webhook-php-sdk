@@ -4,7 +4,7 @@
  *
  * PHP version 8.1
  *
- * @package  OpenAPI\Client
+ * @package  Shaype\Webhook
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,19 +25,19 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Shaype\Webhook\Model;
 
 use ArrayAccess;
 use JsonSerializable;
 use InvalidArgumentException;
 use ReturnTypeWillChange;
-use OpenAPI\Client\ObjectSerializer;
+use Shaype\Webhook\ObjectSerializer;
 
 /**
  * EmailDto Class Doc Comment
  *
  * @description Details of the email notification
- * @package  OpenAPI\Client
+ * @package  Shaype\Webhook
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements ArrayAccess<string, mixed>
@@ -62,12 +62,12 @@ class EmailDto implements ModelInterface, ArrayAccess, JsonSerializable
         'idempotency_key' => 'string',
         'email_address' => 'string',
         'type' => 'string',
-        'customer_details' => '\OpenAPI\Client\Model\CustomerDetails',
+        'customer_details' => '\Shaype\Webhook\Model\CustomerDetails',
         'card_hay_id' => 'string',
-        'card_addition_to_wallet_event' => '\OpenAPI\Client\Model\CardAdditionToWalletEventDto',
-        'card_pin_change_event' => '\OpenAPI\Client\Model\CardPinChangeEventDto',
-        'customer_details_change_event' => '\OpenAPI\Client\Model\CustomerDetailsChangeEventDto',
-        'magic_link_event' => '\OpenAPI\Client\Model\MagicLinkEventDto',
+        'card_addition_to_wallet_event' => '\Shaype\Webhook\Model\CardAdditionToWalletEventDto',
+        'card_pin_change_event' => '\Shaype\Webhook\Model\CardPinChangeEventDto',
+        'customer_details_change_event' => '\Shaype\Webhook\Model\CustomerDetailsChangeEventDto',
+        'magic_link_event' => '\Shaype\Webhook\Model\MagicLinkEventDto',
         'reminder_type' => 'string'
     ];
 
@@ -542,9 +542,9 @@ class EmailDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Gets customer_details
      *
-     * @return \OpenAPI\Client\Model\CustomerDetails|null
+     * @return \Shaype\Webhook\Model\CustomerDetails|null
      */
-    public function getCustomerDetails(): ?\OpenAPI\Client\Model\CustomerDetails
+    public function getCustomerDetails(): ?\Shaype\Webhook\Model\CustomerDetails
     {
         return $this->container['customer_details'];
     }
@@ -552,11 +552,11 @@ class EmailDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Sets customer_details
      *
-     * @param \OpenAPI\Client\Model\CustomerDetails|null $customer_details customer_details
+     * @param \Shaype\Webhook\Model\CustomerDetails|null $customer_details customer_details
      *
      * @return $this
      */
-    public function setCustomerDetails(?\OpenAPI\Client\Model\CustomerDetails $customer_details): static
+    public function setCustomerDetails(?\Shaype\Webhook\Model\CustomerDetails $customer_details): static
     {
         if (is_null($customer_details)) {
             throw new InvalidArgumentException('non-nullable customer_details cannot be null');
@@ -596,9 +596,9 @@ class EmailDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Gets card_addition_to_wallet_event
      *
-     * @return \OpenAPI\Client\Model\CardAdditionToWalletEventDto|null
+     * @return \Shaype\Webhook\Model\CardAdditionToWalletEventDto|null
      */
-    public function getCardAdditionToWalletEvent(): ?\OpenAPI\Client\Model\CardAdditionToWalletEventDto
+    public function getCardAdditionToWalletEvent(): ?\Shaype\Webhook\Model\CardAdditionToWalletEventDto
     {
         return $this->container['card_addition_to_wallet_event'];
     }
@@ -606,11 +606,11 @@ class EmailDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Sets card_addition_to_wallet_event
      *
-     * @param \OpenAPI\Client\Model\CardAdditionToWalletEventDto|null $card_addition_to_wallet_event card_addition_to_wallet_event
+     * @param \Shaype\Webhook\Model\CardAdditionToWalletEventDto|null $card_addition_to_wallet_event card_addition_to_wallet_event
      *
      * @return $this
      */
-    public function setCardAdditionToWalletEvent(?\OpenAPI\Client\Model\CardAdditionToWalletEventDto $card_addition_to_wallet_event): static
+    public function setCardAdditionToWalletEvent(?\Shaype\Webhook\Model\CardAdditionToWalletEventDto $card_addition_to_wallet_event): static
     {
         if (is_null($card_addition_to_wallet_event)) {
             throw new InvalidArgumentException('non-nullable card_addition_to_wallet_event cannot be null');
@@ -623,9 +623,9 @@ class EmailDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Gets card_pin_change_event
      *
-     * @return \OpenAPI\Client\Model\CardPinChangeEventDto|null
+     * @return \Shaype\Webhook\Model\CardPinChangeEventDto|null
      */
-    public function getCardPinChangeEvent(): ?\OpenAPI\Client\Model\CardPinChangeEventDto
+    public function getCardPinChangeEvent(): ?\Shaype\Webhook\Model\CardPinChangeEventDto
     {
         return $this->container['card_pin_change_event'];
     }
@@ -633,11 +633,11 @@ class EmailDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Sets card_pin_change_event
      *
-     * @param \OpenAPI\Client\Model\CardPinChangeEventDto|null $card_pin_change_event card_pin_change_event
+     * @param \Shaype\Webhook\Model\CardPinChangeEventDto|null $card_pin_change_event card_pin_change_event
      *
      * @return $this
      */
-    public function setCardPinChangeEvent(?\OpenAPI\Client\Model\CardPinChangeEventDto $card_pin_change_event): static
+    public function setCardPinChangeEvent(?\Shaype\Webhook\Model\CardPinChangeEventDto $card_pin_change_event): static
     {
         if (is_null($card_pin_change_event)) {
             throw new InvalidArgumentException('non-nullable card_pin_change_event cannot be null');
@@ -650,9 +650,9 @@ class EmailDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Gets customer_details_change_event
      *
-     * @return \OpenAPI\Client\Model\CustomerDetailsChangeEventDto|null
+     * @return \Shaype\Webhook\Model\CustomerDetailsChangeEventDto|null
      */
-    public function getCustomerDetailsChangeEvent(): ?\OpenAPI\Client\Model\CustomerDetailsChangeEventDto
+    public function getCustomerDetailsChangeEvent(): ?\Shaype\Webhook\Model\CustomerDetailsChangeEventDto
     {
         return $this->container['customer_details_change_event'];
     }
@@ -660,11 +660,11 @@ class EmailDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Sets customer_details_change_event
      *
-     * @param \OpenAPI\Client\Model\CustomerDetailsChangeEventDto|null $customer_details_change_event customer_details_change_event
+     * @param \Shaype\Webhook\Model\CustomerDetailsChangeEventDto|null $customer_details_change_event customer_details_change_event
      *
      * @return $this
      */
-    public function setCustomerDetailsChangeEvent(?\OpenAPI\Client\Model\CustomerDetailsChangeEventDto $customer_details_change_event): static
+    public function setCustomerDetailsChangeEvent(?\Shaype\Webhook\Model\CustomerDetailsChangeEventDto $customer_details_change_event): static
     {
         if (is_null($customer_details_change_event)) {
             throw new InvalidArgumentException('non-nullable customer_details_change_event cannot be null');
@@ -677,9 +677,9 @@ class EmailDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Gets magic_link_event
      *
-     * @return \OpenAPI\Client\Model\MagicLinkEventDto|null
+     * @return \Shaype\Webhook\Model\MagicLinkEventDto|null
      */
-    public function getMagicLinkEvent(): ?\OpenAPI\Client\Model\MagicLinkEventDto
+    public function getMagicLinkEvent(): ?\Shaype\Webhook\Model\MagicLinkEventDto
     {
         return $this->container['magic_link_event'];
     }
@@ -687,11 +687,11 @@ class EmailDto implements ModelInterface, ArrayAccess, JsonSerializable
     /**
      * Sets magic_link_event
      *
-     * @param \OpenAPI\Client\Model\MagicLinkEventDto|null $magic_link_event magic_link_event
+     * @param \Shaype\Webhook\Model\MagicLinkEventDto|null $magic_link_event magic_link_event
      *
      * @return $this
      */
-    public function setMagicLinkEvent(?\OpenAPI\Client\Model\MagicLinkEventDto $magic_link_event): static
+    public function setMagicLinkEvent(?\Shaype\Webhook\Model\MagicLinkEventDto $magic_link_event): static
     {
         if (is_null($magic_link_event)) {
             throw new InvalidArgumentException('non-nullable magic_link_event cannot be null');

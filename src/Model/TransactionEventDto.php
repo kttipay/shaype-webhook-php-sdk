@@ -4,7 +4,7 @@
  *
  * PHP version 8.1
  *
- * @package  OpenAPI\Client
+ * @package  Shaype\Webhook
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,19 +25,19 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Shaype\Webhook\Model;
 
 use ArrayAccess;
 use JsonSerializable;
 use InvalidArgumentException;
 use ReturnTypeWillChange;
-use OpenAPI\Client\ObjectSerializer;
+use Shaype\Webhook\ObjectSerializer;
 
 /**
  * TransactionEventDto Class Doc Comment
  *
  * @description Details of the **Transaction** event; provided when the type is &#x60;TRANSACTION&#x60;.
- * @package  OpenAPI\Client
+ * @package  Shaype\Webhook
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements ArrayAccess<string, mixed>
@@ -62,8 +62,8 @@ class TransactionEventDto implements ModelInterface, ArrayAccess, JsonSerializab
         'transaction_hay_id' => 'string',
         'hold_hay_id' => 'string',
         'account_hay_id' => 'string',
-        'currency_amount' => '\OpenAPI\Client\Model\CurrencyAmount',
-        'updated_balance' => '\OpenAPI\Client\Model\CurrencyAmount',
+        'currency_amount' => '\Shaype\Webhook\Model\CurrencyAmount',
+        'updated_balance' => '\Shaype\Webhook\Model\CurrencyAmount',
         'is_pending' => 'bool',
         'counterpart_name' => 'string',
         'outcome' => 'string',
@@ -73,19 +73,19 @@ class TransactionEventDto implements ModelInterface, ArrayAccess, JsonSerializab
         'merchant_name' => 'string',
         'is_atm_transaction' => 'bool',
         'transaction_type' => 'string',
-        'card_usage_details' => '\OpenAPI\Client\Model\CardUsageDetails',
-        'account_balances' => '\OpenAPI\Client\Model\AccountBalancesDto',
+        'card_usage_details' => '\Shaype\Webhook\Model\CardUsageDetails',
+        'account_balances' => '\Shaype\Webhook\Model\AccountBalancesDto',
         'card_hay_id' => 'string',
         'customer_hay_id' => 'string',
-        'rule_details' => '\OpenAPI\Client\Model\RuleDetails',
-        'counterpart_details' => '\OpenAPI\Client\Model\CounterpartDetails',
+        'rule_details' => '\Shaype\Webhook\Model\RuleDetails',
+        'counterpart_details' => '\Shaype\Webhook\Model\CounterpartDetails',
         'origin_id' => 'string',
         'origin_type' => 'string',
         'category' => 'string',
         'merchant_id' => 'string',
         'description' => 'string',
-        'mandate_payment_details' => '\OpenAPI\Client\Model\MandatePaymentDetails',
-        'return_reason' => '\OpenAPI\Client\Model\ReturnReason'
+        'mandate_payment_details' => '\Shaype\Webhook\Model\MandatePaymentDetails',
+        'return_reason' => '\Shaype\Webhook\Model\ReturnReason'
     ];
 
     /**
@@ -796,9 +796,9 @@ class TransactionEventDto implements ModelInterface, ArrayAccess, JsonSerializab
     /**
      * Gets currency_amount
      *
-     * @return \OpenAPI\Client\Model\CurrencyAmount|null
+     * @return \Shaype\Webhook\Model\CurrencyAmount|null
      */
-    public function getCurrencyAmount(): ?\OpenAPI\Client\Model\CurrencyAmount
+    public function getCurrencyAmount(): ?\Shaype\Webhook\Model\CurrencyAmount
     {
         return $this->container['currency_amount'];
     }
@@ -806,11 +806,11 @@ class TransactionEventDto implements ModelInterface, ArrayAccess, JsonSerializab
     /**
      * Sets currency_amount
      *
-     * @param \OpenAPI\Client\Model\CurrencyAmount|null $currency_amount currency_amount
+     * @param \Shaype\Webhook\Model\CurrencyAmount|null $currency_amount currency_amount
      *
      * @return $this
      */
-    public function setCurrencyAmount(?\OpenAPI\Client\Model\CurrencyAmount $currency_amount): static
+    public function setCurrencyAmount(?\Shaype\Webhook\Model\CurrencyAmount $currency_amount): static
     {
         if (is_null($currency_amount)) {
             throw new InvalidArgumentException('non-nullable currency_amount cannot be null');
@@ -823,9 +823,9 @@ class TransactionEventDto implements ModelInterface, ArrayAccess, JsonSerializab
     /**
      * Gets updated_balance
      *
-     * @return \OpenAPI\Client\Model\CurrencyAmount|null
+     * @return \Shaype\Webhook\Model\CurrencyAmount|null
      */
-    public function getUpdatedBalance(): ?\OpenAPI\Client\Model\CurrencyAmount
+    public function getUpdatedBalance(): ?\Shaype\Webhook\Model\CurrencyAmount
     {
         return $this->container['updated_balance'];
     }
@@ -833,11 +833,11 @@ class TransactionEventDto implements ModelInterface, ArrayAccess, JsonSerializab
     /**
      * Sets updated_balance
      *
-     * @param \OpenAPI\Client\Model\CurrencyAmount|null $updated_balance updated_balance
+     * @param \Shaype\Webhook\Model\CurrencyAmount|null $updated_balance updated_balance
      *
      * @return $this
      */
-    public function setUpdatedBalance(?\OpenAPI\Client\Model\CurrencyAmount $updated_balance): static
+    public function setUpdatedBalance(?\Shaype\Webhook\Model\CurrencyAmount $updated_balance): static
     {
         if (is_null($updated_balance)) {
             throw new InvalidArgumentException('non-nullable updated_balance cannot be null');
@@ -1135,9 +1135,9 @@ class TransactionEventDto implements ModelInterface, ArrayAccess, JsonSerializab
     /**
      * Gets card_usage_details
      *
-     * @return \OpenAPI\Client\Model\CardUsageDetails|null
+     * @return \Shaype\Webhook\Model\CardUsageDetails|null
      */
-    public function getCardUsageDetails(): ?\OpenAPI\Client\Model\CardUsageDetails
+    public function getCardUsageDetails(): ?\Shaype\Webhook\Model\CardUsageDetails
     {
         return $this->container['card_usage_details'];
     }
@@ -1145,11 +1145,11 @@ class TransactionEventDto implements ModelInterface, ArrayAccess, JsonSerializab
     /**
      * Sets card_usage_details
      *
-     * @param \OpenAPI\Client\Model\CardUsageDetails|null $card_usage_details card_usage_details
+     * @param \Shaype\Webhook\Model\CardUsageDetails|null $card_usage_details card_usage_details
      *
      * @return $this
      */
-    public function setCardUsageDetails(?\OpenAPI\Client\Model\CardUsageDetails $card_usage_details): static
+    public function setCardUsageDetails(?\Shaype\Webhook\Model\CardUsageDetails $card_usage_details): static
     {
         if (is_null($card_usage_details)) {
             throw new InvalidArgumentException('non-nullable card_usage_details cannot be null');
@@ -1162,9 +1162,9 @@ class TransactionEventDto implements ModelInterface, ArrayAccess, JsonSerializab
     /**
      * Gets account_balances
      *
-     * @return \OpenAPI\Client\Model\AccountBalancesDto|null
+     * @return \Shaype\Webhook\Model\AccountBalancesDto|null
      */
-    public function getAccountBalances(): ?\OpenAPI\Client\Model\AccountBalancesDto
+    public function getAccountBalances(): ?\Shaype\Webhook\Model\AccountBalancesDto
     {
         return $this->container['account_balances'];
     }
@@ -1172,11 +1172,11 @@ class TransactionEventDto implements ModelInterface, ArrayAccess, JsonSerializab
     /**
      * Sets account_balances
      *
-     * @param \OpenAPI\Client\Model\AccountBalancesDto|null $account_balances account_balances
+     * @param \Shaype\Webhook\Model\AccountBalancesDto|null $account_balances account_balances
      *
      * @return $this
      */
-    public function setAccountBalances(?\OpenAPI\Client\Model\AccountBalancesDto $account_balances): static
+    public function setAccountBalances(?\Shaype\Webhook\Model\AccountBalancesDto $account_balances): static
     {
         if (is_null($account_balances)) {
             throw new InvalidArgumentException('non-nullable account_balances cannot be null');
@@ -1243,9 +1243,9 @@ class TransactionEventDto implements ModelInterface, ArrayAccess, JsonSerializab
     /**
      * Gets rule_details
      *
-     * @return \OpenAPI\Client\Model\RuleDetails|null
+     * @return \Shaype\Webhook\Model\RuleDetails|null
      */
-    public function getRuleDetails(): ?\OpenAPI\Client\Model\RuleDetails
+    public function getRuleDetails(): ?\Shaype\Webhook\Model\RuleDetails
     {
         return $this->container['rule_details'];
     }
@@ -1253,11 +1253,11 @@ class TransactionEventDto implements ModelInterface, ArrayAccess, JsonSerializab
     /**
      * Sets rule_details
      *
-     * @param \OpenAPI\Client\Model\RuleDetails|null $rule_details rule_details
+     * @param \Shaype\Webhook\Model\RuleDetails|null $rule_details rule_details
      *
      * @return $this
      */
-    public function setRuleDetails(?\OpenAPI\Client\Model\RuleDetails $rule_details): static
+    public function setRuleDetails(?\Shaype\Webhook\Model\RuleDetails $rule_details): static
     {
         if (is_null($rule_details)) {
             throw new InvalidArgumentException('non-nullable rule_details cannot be null');
@@ -1270,9 +1270,9 @@ class TransactionEventDto implements ModelInterface, ArrayAccess, JsonSerializab
     /**
      * Gets counterpart_details
      *
-     * @return \OpenAPI\Client\Model\CounterpartDetails|null
+     * @return \Shaype\Webhook\Model\CounterpartDetails|null
      */
-    public function getCounterpartDetails(): ?\OpenAPI\Client\Model\CounterpartDetails
+    public function getCounterpartDetails(): ?\Shaype\Webhook\Model\CounterpartDetails
     {
         return $this->container['counterpart_details'];
     }
@@ -1280,11 +1280,11 @@ class TransactionEventDto implements ModelInterface, ArrayAccess, JsonSerializab
     /**
      * Sets counterpart_details
      *
-     * @param \OpenAPI\Client\Model\CounterpartDetails|null $counterpart_details counterpart_details
+     * @param \Shaype\Webhook\Model\CounterpartDetails|null $counterpart_details counterpart_details
      *
      * @return $this
      */
-    public function setCounterpartDetails(?\OpenAPI\Client\Model\CounterpartDetails $counterpart_details): static
+    public function setCounterpartDetails(?\Shaype\Webhook\Model\CounterpartDetails $counterpart_details): static
     {
         if (is_null($counterpart_details)) {
             throw new InvalidArgumentException('non-nullable counterpart_details cannot be null');
@@ -1442,9 +1442,9 @@ class TransactionEventDto implements ModelInterface, ArrayAccess, JsonSerializab
     /**
      * Gets mandate_payment_details
      *
-     * @return \OpenAPI\Client\Model\MandatePaymentDetails|null
+     * @return \Shaype\Webhook\Model\MandatePaymentDetails|null
      */
-    public function getMandatePaymentDetails(): ?\OpenAPI\Client\Model\MandatePaymentDetails
+    public function getMandatePaymentDetails(): ?\Shaype\Webhook\Model\MandatePaymentDetails
     {
         return $this->container['mandate_payment_details'];
     }
@@ -1452,11 +1452,11 @@ class TransactionEventDto implements ModelInterface, ArrayAccess, JsonSerializab
     /**
      * Sets mandate_payment_details
      *
-     * @param \OpenAPI\Client\Model\MandatePaymentDetails|null $mandate_payment_details mandate_payment_details
+     * @param \Shaype\Webhook\Model\MandatePaymentDetails|null $mandate_payment_details mandate_payment_details
      *
      * @return $this
      */
-    public function setMandatePaymentDetails(?\OpenAPI\Client\Model\MandatePaymentDetails $mandate_payment_details): static
+    public function setMandatePaymentDetails(?\Shaype\Webhook\Model\MandatePaymentDetails $mandate_payment_details): static
     {
         if (is_null($mandate_payment_details)) {
             throw new InvalidArgumentException('non-nullable mandate_payment_details cannot be null');
@@ -1469,9 +1469,9 @@ class TransactionEventDto implements ModelInterface, ArrayAccess, JsonSerializab
     /**
      * Gets return_reason
      *
-     * @return \OpenAPI\Client\Model\ReturnReason|null
+     * @return \Shaype\Webhook\Model\ReturnReason|null
      */
-    public function getReturnReason(): ?\OpenAPI\Client\Model\ReturnReason
+    public function getReturnReason(): ?\Shaype\Webhook\Model\ReturnReason
     {
         return $this->container['return_reason'];
     }
@@ -1479,11 +1479,11 @@ class TransactionEventDto implements ModelInterface, ArrayAccess, JsonSerializab
     /**
      * Sets return_reason
      *
-     * @param \OpenAPI\Client\Model\ReturnReason|null $return_reason return_reason
+     * @param \Shaype\Webhook\Model\ReturnReason|null $return_reason return_reason
      *
      * @return $this
      */
-    public function setReturnReason(?\OpenAPI\Client\Model\ReturnReason $return_reason): static
+    public function setReturnReason(?\Shaype\Webhook\Model\ReturnReason $return_reason): static
     {
         if (is_null($return_reason)) {
             throw new InvalidArgumentException('non-nullable return_reason cannot be null');

@@ -4,7 +4,7 @@
  *
  * PHP version 8.1
  *
- * @package  OpenAPI\Client
+ * @package  Shaype\Webhook
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,19 +25,19 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Shaype\Webhook\Model;
 
 use ArrayAccess;
 use JsonSerializable;
 use InvalidArgumentException;
 use ReturnTypeWillChange;
-use OpenAPI\Client\ObjectSerializer;
+use Shaype\Webhook\ObjectSerializer;
 
 /**
  * AccountBalancesDto Class Doc Comment
  *
  * @description Breakdown of the account balances
- * @package  OpenAPI\Client
+ * @package  Shaype\Webhook
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements ArrayAccess<string, mixed>
@@ -59,11 +59,11 @@ class AccountBalancesDto implements ModelInterface, ArrayAccess, JsonSerializabl
       * @var array<string, string>
       */
     protected static array $openAPITypes = [
-        'total_balance' => '\OpenAPI\Client\Model\CurrencyAmount',
-        'held_balance' => '\OpenAPI\Client\Model\CurrencyAmount',
-        'locked_balance' => '\OpenAPI\Client\Model\CurrencyAmount',
-        'stacks_balance' => '\OpenAPI\Client\Model\CurrencyAmount',
-        'available_balance' => '\OpenAPI\Client\Model\CurrencyAmount'
+        'total_balance' => '\Shaype\Webhook\Model\CurrencyAmount',
+        'held_balance' => '\Shaype\Webhook\Model\CurrencyAmount',
+        'locked_balance' => '\Shaype\Webhook\Model\CurrencyAmount',
+        'stacks_balance' => '\Shaype\Webhook\Model\CurrencyAmount',
+        'available_balance' => '\Shaype\Webhook\Model\CurrencyAmount'
     ];
 
     /**
@@ -319,9 +319,9 @@ class AccountBalancesDto implements ModelInterface, ArrayAccess, JsonSerializabl
     /**
      * Gets total_balance
      *
-     * @return \OpenAPI\Client\Model\CurrencyAmount|null
+     * @return \Shaype\Webhook\Model\CurrencyAmount|null
      */
-    public function getTotalBalance(): ?\OpenAPI\Client\Model\CurrencyAmount
+    public function getTotalBalance(): ?\Shaype\Webhook\Model\CurrencyAmount
     {
         return $this->container['total_balance'];
     }
@@ -329,11 +329,11 @@ class AccountBalancesDto implements ModelInterface, ArrayAccess, JsonSerializabl
     /**
      * Sets total_balance
      *
-     * @param \OpenAPI\Client\Model\CurrencyAmount|null $total_balance total_balance
+     * @param \Shaype\Webhook\Model\CurrencyAmount|null $total_balance total_balance
      *
      * @return $this
      */
-    public function setTotalBalance(?\OpenAPI\Client\Model\CurrencyAmount $total_balance): static
+    public function setTotalBalance(?\Shaype\Webhook\Model\CurrencyAmount $total_balance): static
     {
         if (is_null($total_balance)) {
             throw new InvalidArgumentException('non-nullable total_balance cannot be null');
@@ -346,9 +346,9 @@ class AccountBalancesDto implements ModelInterface, ArrayAccess, JsonSerializabl
     /**
      * Gets held_balance
      *
-     * @return \OpenAPI\Client\Model\CurrencyAmount|null
+     * @return \Shaype\Webhook\Model\CurrencyAmount|null
      */
-    public function getHeldBalance(): ?\OpenAPI\Client\Model\CurrencyAmount
+    public function getHeldBalance(): ?\Shaype\Webhook\Model\CurrencyAmount
     {
         return $this->container['held_balance'];
     }
@@ -356,11 +356,11 @@ class AccountBalancesDto implements ModelInterface, ArrayAccess, JsonSerializabl
     /**
      * Sets held_balance
      *
-     * @param \OpenAPI\Client\Model\CurrencyAmount|null $held_balance held_balance
+     * @param \Shaype\Webhook\Model\CurrencyAmount|null $held_balance held_balance
      *
      * @return $this
      */
-    public function setHeldBalance(?\OpenAPI\Client\Model\CurrencyAmount $held_balance): static
+    public function setHeldBalance(?\Shaype\Webhook\Model\CurrencyAmount $held_balance): static
     {
         if (is_null($held_balance)) {
             throw new InvalidArgumentException('non-nullable held_balance cannot be null');
@@ -373,9 +373,9 @@ class AccountBalancesDto implements ModelInterface, ArrayAccess, JsonSerializabl
     /**
      * Gets locked_balance
      *
-     * @return \OpenAPI\Client\Model\CurrencyAmount|null
+     * @return \Shaype\Webhook\Model\CurrencyAmount|null
      */
-    public function getLockedBalance(): ?\OpenAPI\Client\Model\CurrencyAmount
+    public function getLockedBalance(): ?\Shaype\Webhook\Model\CurrencyAmount
     {
         return $this->container['locked_balance'];
     }
@@ -383,11 +383,11 @@ class AccountBalancesDto implements ModelInterface, ArrayAccess, JsonSerializabl
     /**
      * Sets locked_balance
      *
-     * @param \OpenAPI\Client\Model\CurrencyAmount|null $locked_balance locked_balance
+     * @param \Shaype\Webhook\Model\CurrencyAmount|null $locked_balance locked_balance
      *
      * @return $this
      */
-    public function setLockedBalance(?\OpenAPI\Client\Model\CurrencyAmount $locked_balance): static
+    public function setLockedBalance(?\Shaype\Webhook\Model\CurrencyAmount $locked_balance): static
     {
         if (is_null($locked_balance)) {
             throw new InvalidArgumentException('non-nullable locked_balance cannot be null');
@@ -400,9 +400,9 @@ class AccountBalancesDto implements ModelInterface, ArrayAccess, JsonSerializabl
     /**
      * Gets stacks_balance
      *
-     * @return \OpenAPI\Client\Model\CurrencyAmount|null
+     * @return \Shaype\Webhook\Model\CurrencyAmount|null
      */
-    public function getStacksBalance(): ?\OpenAPI\Client\Model\CurrencyAmount
+    public function getStacksBalance(): ?\Shaype\Webhook\Model\CurrencyAmount
     {
         return $this->container['stacks_balance'];
     }
@@ -410,11 +410,11 @@ class AccountBalancesDto implements ModelInterface, ArrayAccess, JsonSerializabl
     /**
      * Sets stacks_balance
      *
-     * @param \OpenAPI\Client\Model\CurrencyAmount|null $stacks_balance stacks_balance
+     * @param \Shaype\Webhook\Model\CurrencyAmount|null $stacks_balance stacks_balance
      *
      * @return $this
      */
-    public function setStacksBalance(?\OpenAPI\Client\Model\CurrencyAmount $stacks_balance): static
+    public function setStacksBalance(?\Shaype\Webhook\Model\CurrencyAmount $stacks_balance): static
     {
         if (is_null($stacks_balance)) {
             throw new InvalidArgumentException('non-nullable stacks_balance cannot be null');
@@ -427,9 +427,9 @@ class AccountBalancesDto implements ModelInterface, ArrayAccess, JsonSerializabl
     /**
      * Gets available_balance
      *
-     * @return \OpenAPI\Client\Model\CurrencyAmount|null
+     * @return \Shaype\Webhook\Model\CurrencyAmount|null
      */
-    public function getAvailableBalance(): ?\OpenAPI\Client\Model\CurrencyAmount
+    public function getAvailableBalance(): ?\Shaype\Webhook\Model\CurrencyAmount
     {
         return $this->container['available_balance'];
     }
@@ -437,11 +437,11 @@ class AccountBalancesDto implements ModelInterface, ArrayAccess, JsonSerializabl
     /**
      * Sets available_balance
      *
-     * @param \OpenAPI\Client\Model\CurrencyAmount|null $available_balance available_balance
+     * @param \Shaype\Webhook\Model\CurrencyAmount|null $available_balance available_balance
      *
      * @return $this
      */
-    public function setAvailableBalance(?\OpenAPI\Client\Model\CurrencyAmount $available_balance): static
+    public function setAvailableBalance(?\Shaype\Webhook\Model\CurrencyAmount $available_balance): static
     {
         if (is_null($available_balance)) {
             throw new InvalidArgumentException('non-nullable available_balance cannot be null');

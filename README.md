@@ -49,12 +49,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\NotificationsAPIApi(
+$apiInstance = new Shaype\Webhook\Api\NotificationsAPIApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$email_dto = new \OpenAPI\Client\Model\EmailDto(); // \OpenAPI\Client\Model\EmailDto
+$email_dto = new \Shaype\Webhook\Model\EmailDto(); // \Shaype\Webhook\Model\EmailDto
 
 try {
     $apiInstance->notifyEmail($email_dto);
