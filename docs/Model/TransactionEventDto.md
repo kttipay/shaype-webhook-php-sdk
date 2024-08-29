@@ -25,7 +25,7 @@ Name | Type | Description | Notes
 **rule_details** | [**\Shaype\Webhook\Model\RuleDetails**](RuleDetails.md) |  | [optional]
 **counterpart_details** | [**\Shaype\Webhook\Model\CounterpartDetails**](CounterpartDetails.md) |  | [optional]
 **origin_id** | **string** | Transaction origin ID (to be used with &#x60;originType&#x60;). | [optional]
-**origin_type** | **string** | Transaction origin type:  * **CUSTOMER**: Transaction initiated by a customer  * **SCHEDULED_PAYMENT**: Transaction initiated by a schedule  * **HAAS_OPERATIONS**: Transaction initiated by client operations  * **OPERATIONS**: Transaction initiated by Shaype operations  * **MANDATE_PAYMENT**: Transaction initiated by mandate  * **DIRECT_DEBIT**: Transaction initiated by direct debit | [optional]
+**origin_type** | **string** | Transaction origin type:  * **CUSTOMER**: Transaction initiated by a customer  * **SCHEDULED_PAYMENT**: Transaction initiated by a schedule  * **HAAS_OPERATIONS**: Transaction initiated by client operations  * **OPERATIONS**: Transaction initiated by Shaype operations  * **MANDATE_PAYMENT**: Transaction initiated by mandate  * **DIRECT_DEBIT**: Transaction initiated by direct debit  * **TRANSACTION**: Transaction initiated by another transaction | [optional]
 **category** | **string** | Category of the transaction. | [optional]
 **merchant_id** | **string** | Merchant ID, alphanumeric / special characters maximum 15 characters in length. | [optional]
 **description** | **string** | Description on the Transaction | [optional]
